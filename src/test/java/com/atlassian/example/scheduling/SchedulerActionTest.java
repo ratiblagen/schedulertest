@@ -1,7 +1,6 @@
 package com.atlassian.example.scheduling;
 
 import com.atlassian.jira.junit.rules.AvailableInContainer;
-import com.atlassian.jira.junit.rules.MockComponentContainer;
 import com.atlassian.jira.junit.rules.MockitoMocksInContainer;
 import com.atlassian.jira.security.JiraAuthenticationContext;
 import com.atlassian.jira.util.I18nHelper;
