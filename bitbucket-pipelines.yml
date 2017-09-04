@@ -8,6 +8,8 @@ image: translucent/atlassian-plugin-sdk
 pipelines:
   default:
     - step:
+        caches:
+          - maven
         script:
           - atlas-version
           - atlas-mvn clean install
