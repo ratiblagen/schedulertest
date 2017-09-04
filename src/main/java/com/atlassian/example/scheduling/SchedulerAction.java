@@ -10,7 +10,6 @@ import java.util.List;
  * @author  Erik van Zijst
  */
 public class SchedulerAction extends JiraWebActionSupport {
-
     private final TwitterMonitor twitterMonitor;
     private String query;
     private long interval;
@@ -28,7 +27,7 @@ public class SchedulerAction extends JiraWebActionSupport {
 
     public String doReschedule() {
         twitterMonitor.reschedule(query, interval);
-        return getRedirect("TwitterScheduler!default.jspa");
+        return getRedirect("TwitterScheduler!default.jspa", false);
     }
 
     public List<Tweet> getTweets() {
