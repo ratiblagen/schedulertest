@@ -1,8 +1,0 @@
-Shows you how to schedule Java tasks in your plugin that run in the background at regular 
-intervals. To this end we will use the cross-product PluginScheduler component from SAL 
-(Shared Access Layer).
-
-
-Full documentation is always available at:
-
-https://developer.atlassian.com/display/DOCS/Plugin+Tutorial+-+Scheduling+Events+via+SAL
