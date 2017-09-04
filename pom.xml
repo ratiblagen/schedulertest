@@ -25,7 +25,7 @@
     <dependencies>
         <dependency>
             <groupId>com.atlassian.jira</groupId>
-            <artifactId>atlassian-jira</artifactId>
+            <artifactId>jira-api</artifactId>
             <version>${jira.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -84,15 +84,8 @@
         </plugins>
     </build>
 
-    <scm>
-        <connection>scm:svn:https://svn.atlassian.com/svn/public/contrib/tutorials/scheduled-events/trunk</connection>
-        <developerConnection>scm:svn:https://svn.atlassian.com/svn/public/contrib/tutorials/scheduled-events/trunk</developerConnection>
-        <url>http://svn.atlassian.com/fisheye/browse/public/contrib/tutorials/scheduled-events/trunk</url>
-    </scm>
-
     <properties>
         <jira.version>7.1.0</jira.version>
         <amps.version>6.2.9</amps.version>
     </properties>
-
 </project>
