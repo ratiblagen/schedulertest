@@ -27,12 +27,40 @@
         <link linkId="schedulerActionLink">/secure/admin/TwitterScheduler.jspa</link>
     </web-item>
 
+
+
     <webwork1 key="schedulerAction" name="SAL Scheduler Example">
         <actions>
             <action name="com.atlassian.example.scheduling.SchedulerAction"
                     alias="TwitterScheduler">
                 <view name="success">/templates/scheduler.vm</view>
                 <view name="input">/templates/scheduler.vm</view>
+            </action>
+        </actions>
+    </webwork1>
+
+    <component key="schedulerComponentForIssues" class="com.atlassian.example.scheduling.TransitionImpl"
+               system="true" public="true">
+        <description>The plugin component that schedules the Issues search.</description>
+        <interface>com.atlassian.sal.api.lifecycle.LifecycleAware</interface>
+        <interface>com.atlassian.example.scheduling.TransitionInterface</interface>
+    </component>
+
+
+    <web-item key="autoTransitionSchedulerLink" section="system.admin/system"
+              i18n-name-key="auto.transition.scheduler.link"
+              name="Auto Transition Scheduler Link"
+              weight="1">
+        <label key="auto.transition.scheduler.link.label"/>
+        <link linkId="autoTransitionSchedulerLink">/secure/admin/AutoTransition.jspa</link>
+    </web-item>
+
+    <webwork1 key="autoTransitionScheduler" name="Auto Transition Scheduler Example">
+        <actions>
+            <action name="com.atlassian.example.scheduling.AutoTransitionSchedulerAction"
+                    alias="AutoTransition">
+                <view name="success">/templates/auto-transition-scheduler.vm</view>
+                <view name="input">/templates/auto-transition-scheduler.vm</view>
             </action>
         </actions>
     </webwork1>

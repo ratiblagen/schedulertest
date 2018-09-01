@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.atlassian.applinks:applinks-api:5.0.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../tools_data/maven-home/repository/com/atlassian/applinks/applinks-api/5.0.6/applinks-api-5.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../tools_data/maven-home/repository/com/atlassian/applinks/applinks-api/5.0.6/applinks-api-5.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../tools_data/maven-home/repository/com/atlassian/applinks/applinks-api/5.0.6/applinks-api-5.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -23,8 +23,8 @@ public class TwitterMonitorImpl implements TwitterMonitor, LifecycleAware {
     private final Logger logger = Logger.getLogger(TwitterMonitorImpl.class);
     private final PluginScheduler pluginScheduler;  // provided by SAL
 
-    private String query = "Atlassian"; // default Twitter search
-    private long interval = 5000L;      // default job interval (5 sec)
+    private String query = "and"; // default Twitter search
+    private long interval = 3600000000L;      // default job interval (5 sec)
     private List<Tweet> tweets;         // results of the last search
     private Date lastRun = null;        // time when the last search returned
 
